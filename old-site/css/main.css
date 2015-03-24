@@ -20,8 +20,12 @@ html {
 }
 
 h1 {
-  display: inline-block;
-  margin: 0;
+  text-align: center;
+  display: absolute;
+  margin: auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 ul {
@@ -61,14 +65,19 @@ h2 {
 }
 
 nav p {
-  display: inline-block;
+  text-align: center;
+  display: absolute;
   font-style: italic;
   margin: 0 0 0 10px;
 }
 
 /* Nav */
 
-nav, footer {
+nav {
+  background-image: url("bg.jpg");
+  } 
+
+footer {
   background: #E04A50;
   color: white;
   padding: 20px;
