@@ -92,30 +92,51 @@ nav {
   height: 400px;
   } 
 
-footer {
-  background: #E04A50;
-  color: white;
-  padding: 20px;
-}
 
 /* Instructions */
 
 .sendmoney {
   float: left;
+  max-width: 30%;
+  border: 1px;
+  border-color: gray;
+  background: #f2f2f2;
 }
 
+
+.receive {
+  float: left;
+  max-width: 30%;
+  background: #f2f2f2;
+}
+
+.repeat {
+  float: left;
+  max-width: 30%;
+  background: #f2f2f2;
+}
+
+.fa.fa-money.fa-3x {
+  font-size: 100px;
+}
+h3 {
+
+}
 /* Footer */
 
 footer {
-  height: 30px;
-  margin-top: 20px;
-  padding: 0 20px;
+  margin-bottom: 0;
+  float: left;
+  width: 800px;
+  padding: 10px;
+  color: black;
 }
 
 footer p {
   font-size: 12px;
-  line-height: 30px;
   margin: 0;
+  color: white;
+  padding: 10px;
 }
 
 
