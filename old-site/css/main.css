@@ -52,7 +52,7 @@ div.center {
   text-align: center;
   margin: auto;
   position: relative;
-  top: 50%;
+  top: 70%;
   transform: translateY(-99%);
 }
 .firstbillion {
@@ -60,9 +60,14 @@ div.center {
   text-align: center;
   color: white;
   z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .firstbillion p {
   font-size: 12px;
+}
+h1 {
+  margin: auto;
 }
 /* ABOUT */
 .about {
@@ -87,7 +92,7 @@ div.center {
   border-color: gray;
   background: #f2f2f2;
   display: block;
-  margin: 45px;
+  margin: 30px 45px 30px 45px;
 }
 .sendmoneycircle {
   border: 1px solid #a1a1a1;
@@ -116,7 +121,7 @@ div.center {
   background: #f2f2f2;
   display: block;
   float: left;
-  margin: 45px;
+  margin: 30px 45px 30px 45px;
 }
 .receivecircle {
   border: 1px solid #a1a1a1;
@@ -144,7 +149,7 @@ div.center {
   width: 174px;
   background: #f2f2f2;
   display: block;
-  margin: 45px;
+  margin: 30px 45px 30px 45px;
 }
 .repeatcircle {
   border: 1px solid #a1a1a1;
