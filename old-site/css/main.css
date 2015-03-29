@@ -31,6 +31,11 @@ h2 {
 }
 
 /* INTRO */
+@media (max-width: 767px) {
+  .intro {
+    width: 767px;
+  }
+}
 .intro {
   background-image: url("bg.jpg");
   box-shadow: 
@@ -103,6 +108,11 @@ h1 {
   width: 150px;
   border-radius: 100%;
   position: center;
+}
+@media (max-width: 767px) {
+  .sendmoney p {
+    display: block;
+  }
 }
 .sendmoney p {
   display: none;
