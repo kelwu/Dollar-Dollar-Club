@@ -2,7 +2,8 @@ html, body {
   background: gray;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  padding: 0;
+  padding-right: 5%;
+  padding-left: 5%;
 }
 
 html {
@@ -13,12 +14,12 @@ html {
 .body-wrap {
   background: #F2F2F2;
   margin: 0 auto;
-  width: 800px;
+  width: 100%;
 }
 
 section {
   margin: 0 auto;
-  width: 800px;
+  width: 100%;
 }
 
 h2 {
@@ -110,10 +111,19 @@ h1 {
   position: center;
 }
 @media (max-width: 767px) {
-  .intro {
-    width: auto;
+  .calltoaction {
+    background-color: blue;
   }
-  .about {
+  body, html {
+    padding: 0;
+  }
+  .sendmoney p {
+    text-align: center;
+    font-size: 10px;
+    display: block
+  }
+}
+/*  .about {
     max-width: 100%;
   }
   .sendmoney p {
@@ -126,7 +136,7 @@ h1 {
     float: none;
     width: auto;
   }
-}
+}*/
 .sendmoney p {
   display: none;
 }
@@ -213,11 +223,10 @@ h3 {
 
 footer {
   margin: 0;
-  width: 800px;
+  width: 100%;
   color: black;
   z-index: 1;
   display: block;
-  position: absolute;
   float: left;
   background-color: black;
 }
