@@ -31,11 +31,6 @@ h2 {
 }
 
 /* INTRO */
-@media (max-width: 767px) {
-  .intro {
-    width: 767px;
-  }
-}
 .intro {
   background-image: url("bg.jpg");
   box-shadow: 
@@ -85,9 +80,14 @@ h1 {
 }
 
 .calltoaction {
-  position: absolute;
   background-color: #F2F2F2;
   height: 300px;
+}
+/*.instructions {
+  height: 347px;
+}*/
+.clear {
+  clear: both;
 }
 /* Instructions */
 /* SEND MONEY */
@@ -110,8 +110,21 @@ h1 {
   position: center;
 }
 @media (max-width: 767px) {
+  .intro {
+    width: auto;
+  }
+  .about {
+    max-width: 100%;
+  }
   .sendmoney p {
     display: block;
+  }
+  .bodywrap {
+    width: auto;
+  }
+  .sendmoney, .receive, .repeat {
+    float: none;
+    width: auto;
   }
 }
 .sendmoney p {
@@ -199,7 +212,7 @@ h3 {
 /* Footer */
 
 footer {
-  margin: 300px 0 0 0;
+  margin: 0;
   width: 800px;
   color: black;
   z-index: 1;
