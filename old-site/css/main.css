@@ -200,6 +200,12 @@ h1 {
   bottom: 115px;
 }
 
+.icon:hover {
+  -webkit-transition-duration: .5s;
+  -webkit-transition-property: bottom;
+  bottom: 120px;
+}
+
 img.carot-size {
   height: 17px;
 }
