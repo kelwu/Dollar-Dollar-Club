@@ -2,23 +2,74 @@ html, body {
   background: gray;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
-  padding: 0;
+  padding-right: 5%;
+  padding-left: 5%;
+}
+/* ------------------------For Mobile----------------------------- */
+@media (max-width: 767px) {
+  .calltoaction {
+    background-color: blue;
+    padding-left: 32%;
+    padding-right: 0;
+  }
+  body, html {
+    padding: 0;
+  }
+  .sendmoney p {
+    text-align: center;
+    font-size: 10px;
+    display: block
+  }
+  .receive p {
+    text-align: center;
+    font-size: 10px;
+    display: block;
+  }
+   .repeat p {
+    text-align: center;
+    font-size: 10px;
+    display: block;
+  }
 }
 
-html {
-  box-sizing: border-box;
+/* ----------------Desktop - Display Hover on 800px and larger only */
+@media only screen and (min-width: 768px) {
+  .sendmoney p {
+    display: none;
+  }
+  .sendmoney:hover p {
+    text-align: center;
+    font-size: 10px;
+    display: block
+  }
+  .receive p {
+    display: none;
+  }
+  .receive:hover p {
+    text-align: center;
+    font-size: 10px;
+    display: block;
+  }
+  .repeat p {
+    display: none;
+  }
+  .repeat:hover p {
+    text-align: center;
+    font-size: 10px;
+    display: block;
+  }
 }
-
 
 .body-wrap {
   background: #F2F2F2;
   margin: 0 auto;
-  width: 800px;
+  width: 100%;
+  max-width: 800px;
 }
 
 section {
   margin: 0 auto;
-  width: 800px;
+  width: 100%;
 }
 
 h2 {
@@ -31,11 +82,6 @@ h2 {
 }
 
 /* INTRO */
-@media (max-width: 767px) {
-  .intro {
-    width: 767px;
-  }
-}
 .intro {
   background-image: url("bg.jpg");
   box-shadow: 
@@ -43,6 +89,7 @@ h2 {
   background-position: top;
   position: relative;
   height: 375px;
+  max-width: 800px;
   } 
 .orange-overlay {
   background:#FF2400; 
@@ -52,6 +99,7 @@ h2 {
   height: 100%;
   width: 100%;
   float: left;
+  box-shadow: 0 -2px 5px 2px black inset;
 }
 div.center {
   text-align: center;
@@ -71,12 +119,18 @@ div.center {
 .firstbillion p {
   font-size: 12px;
 }
+.firstbillion img {
+  width: 35px;
+  position: relative;
+  top: 120px;
+}
 h1 {
   margin: auto;
 }
 /* ABOUT */
 .about {
   margin: 20px 0 0 0;
+  max-width: 800px;
 }
 .about p {
   text-align: center;
@@ -85,9 +139,15 @@ h1 {
 }
 
 .calltoaction {
-  position: absolute;
   background-color: #F2F2F2;
   height: 300px;
+  max-width: 800px;
+}
+/*.instructions {
+  height: 347px;
+}*/
+.clear {
+  clear: both;
 }
 /* Instructions */
 /* SEND MONEY */
@@ -98,7 +158,7 @@ h1 {
   border-color: gray;
   background: #f2f2f2;
   display: block;
-  margin: 30px 45px 30px 50px;
+  margin: 30px 45px 0px 50px;
 }
 .sendmoneycircle {
   border: 1px solid #a1a1a1;
@@ -108,19 +168,6 @@ h1 {
   width: 150px;
   border-radius: 100%;
   position: center;
-}
-@media (max-width: 767px) {
-  .sendmoney p {
-    display: block;
-  }
-}
-.sendmoney p {
-  display: none;
-}
-.sendmoney:hover p {
-  text-align: center;
-  font-size: 10px;
-  display: block
 }
 .fa.fa-money.fa-4x {
   text-align: center;
@@ -135,7 +182,7 @@ h1 {
   background: #f2f2f2;
   display: block;
   float: left;
-  margin: 30px 45px 30px 45px;
+  margin: 30px 45px 0px 45px;
 }
 .receivecircle {
   border: 1px solid #a1a1a1;
@@ -144,14 +191,6 @@ h1 {
   height: 150px;
   width: 150px;
   border-radius: 100%;
-  display: block;
-}
-.receive p {
-  display: none;
-}
-.receive:hover p {
-  text-align: center;
-  font-size: 10px;
   display: block;
 }
 .fa.fa-tint.fa-4x {
@@ -166,7 +205,7 @@ h1 {
   width: 170px;
   background: #f2f2f2;
   display: block;
-  margin: 30px 45px 30px 45px;
+  margin: 30px 45px 0px 45px;
 }
 .repeatcircle {
   border: 1px solid #a1a1a1;
@@ -175,14 +214,6 @@ h1 {
   height: 150px;
   width: 150px;
   border-radius: 100%;
-  display: block;
-}
-.repeat p {
-  display: none;
-}
-.repeat:hover p {
-  text-align: center;
-  font-size: 10px;
   display: block;
 }
 .fa.fa-heart.fa-4x {
@@ -199,14 +230,14 @@ h3 {
 /* Footer */
 
 footer {
-  margin: 300px 0 0 0;
-  width: 800px;
+  margin: 0;
+  width: 100%;
   color: black;
   z-index: 1;
   display: block;
-  position: absolute;
   float: left;
   background-color: black;
+  max-width: 800px;
 }
 
 footer p {
@@ -215,4 +246,3 @@ footer p {
   color: white;
   padding: 2px;
 }
-
