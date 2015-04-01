@@ -9,6 +9,8 @@ html, body {
 @media (max-width: 767px) {
   .calltoaction {
     background-color: blue;
+    padding-left: 0;
+    padding-right: 0;
   }
   body, html {
     padding: 0;
@@ -18,16 +20,12 @@ html, body {
     font-size: 10px;
     display: block
   }
-  .footer {}
 }
-html {
-  box-sizing: border-box;
-}
-
 .body-wrap {
   background: #F2F2F2;
   margin: 0 auto;
   width: 100%;
+  max-width: 800px;
 }
 
 section {
@@ -52,6 +50,7 @@ h2 {
   background-position: top;
   position: relative;
   height: 375px;
+  max-width: 800px;
   } 
 .orange-overlay {
   background:#FF2400; 
@@ -91,6 +90,7 @@ h1 {
 /* ABOUT */
 .about {
   margin: 20px 0 0 0;
+  max-width: 800px;
 }
 .about p {
   text-align: center;
@@ -101,6 +101,7 @@ h1 {
 .calltoaction {
   background-color: #F2F2F2;
   height: 300px;
+  max-width: 800px;
 }
 /*.instructions {
   height: 347px;
@@ -222,6 +223,7 @@ footer {
   display: block;
   float: left;
   background-color: black;
+  max-width: 800px;
 }
 
 footer p {
@@ -230,4 +232,3 @@ footer p {
   color: white;
   padding: 2px;
 }
-
