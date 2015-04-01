@@ -5,22 +5,49 @@ html, body {
   padding-right: 5%;
   padding-left: 5%;
 }
-/* For Mobile */
+/* ------------------------For Mobile----------------------------- */
 @media (max-width: 767px) {
   .calltoaction {
     background-color: blue;
-    padding-left: 0;
+    padding-left: 32%;
     padding-right: 0;
   }
   body, html {
     padding: 0;
   }
+
+}
+
+/* ----------------Desktop - Display Hover on 800px and larger only */
+@media only screen and (min-width: 800px) {
   .sendmoney p {
+    display: none;
+    text-align: center;
+    font-size: 10px;
+  }
+  .sendmoney:hover p {
     text-align: center;
     font-size: 10px;
     display: block
   }
+  .receive p {
+    display: none;
+  }
+  .receive:hover p {
+    text-align: center;
+    font-size: 10px;
+    display: block;
+  }
+  .repeat p {
+    display: none;
+  }
+  .repeat:hover p {
+    text-align: center;
+    font-size: 10px;
+    display: block;
+  }
 }
+
 .body-wrap {
   background: #F2F2F2;
   margin: 0 auto;
@@ -130,12 +157,7 @@ h1 {
   border-radius: 100%;
   position: center;
 }
-.sendmoney p {
-  display: none;
-  text-align: center;
-  font-size: 10px;
-}
-.sendmoney:hover p {
+.sendmoney: p {
   text-align: center;
   font-size: 10px;
   display: block
@@ -165,9 +187,6 @@ h1 {
   display: block;
 }
 .receive p {
-  display: none;
-}
-.receive:hover p {
   text-align: center;
   font-size: 10px;
   display: block;
@@ -196,9 +215,6 @@ h1 {
   display: block;
 }
 .repeat p {
-  display: none;
-}
-.repeat:hover p {
   text-align: center;
   font-size: 10px;
   display: block;
