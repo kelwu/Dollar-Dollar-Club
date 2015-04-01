@@ -15,15 +15,27 @@ html, body {
   body, html {
     padding: 0;
   }
-
+  .sendmoney p {
+    text-align: center;
+    font-size: 10px;
+    display: block
+  }
+  .receive p {
+    text-align: center;
+    font-size: 10px;
+    display: block;
+  }
+   .repeat p {
+    text-align: center;
+    font-size: 10px;
+    display: block;
+  }
 }
 
 /* ----------------Desktop - Display Hover on 800px and larger only */
-@media only screen and (min-width: 800px) {
+@media only screen and (min-width: 768px) {
   .sendmoney p {
     display: none;
-    text-align: center;
-    font-size: 10px;
   }
   .sendmoney:hover p {
     text-align: center;
@@ -157,11 +169,6 @@ h1 {
   border-radius: 100%;
   position: center;
 }
-.sendmoney: p {
-  text-align: center;
-  font-size: 10px;
-  display: block
-}
 .fa.fa-money.fa-4x {
   text-align: center;
   color: gray;
@@ -186,11 +193,6 @@ h1 {
   border-radius: 100%;
   display: block;
 }
-.receive p {
-  text-align: center;
-  font-size: 10px;
-  display: block;
-}
 .fa.fa-tint.fa-4x {
   text-align: center;
   color: gray;
@@ -212,11 +214,6 @@ h1 {
   height: 150px;
   width: 150px;
   border-radius: 100%;
-  display: block;
-}
-.repeat p {
-  text-align: center;
-  font-size: 10px;
   display: block;
 }
 .fa.fa-heart.fa-4x {
