@@ -15,25 +15,43 @@ html, body {
   body, html {
     padding: 0;
   }
+  .sendmoney {
+    height: 100%;
+    width: 100%;
+    margin: 20px 0 0 0;
+    float: none;
+  }
   .sendmoney p {
     text-align: center;
-    font-size: 10px;
-    display: block
+    font-size: 14px;
+    display: block;
+    position: relative;
+    left: -100px;
+    padding-right: 8%;
   }
   .receive p {
     text-align: center;
-    font-size: 10px;
+    font-size: 14px;
     display: block;
+    position: relative;
+    left: -100px;
+    padding-right: 8%;
   }
    .repeat p {
     text-align: center;
-    font-size: 10px;
+    font-size: 14px;
     display: block;
+    position: relative;
+    left: -100px;
+    padding-right: 8%;
   }
 }
 
 /* ----------------Desktop - Display Hover on 800px and larger only */
 @media only screen and (min-width: 768px) {
+  .sendmoney {
+    max-width: 170px;
+  }
   .sendmoney p {
     display: none;
   }
@@ -84,8 +102,6 @@ h2 {
 /* INTRO */
 .intro {
   background-image: url("bg.jpg");
-  box-shadow: 
-  background-size: cover;
   background-position: top;
   position: relative;
   height: 375px;
@@ -153,9 +169,6 @@ h1 {
 /* SEND MONEY */
 .sendmoney {
   float: left;
-  max-width: 170px;
-  border: 1px;
-  border-color: gray;
   background: #f2f2f2;
   display: block;
   margin: 30px 45px 0px 50px;
