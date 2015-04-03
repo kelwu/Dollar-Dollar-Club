@@ -51,32 +51,16 @@ html, body {
 
 /* ----------------Desktop - Display Hover on 800px and larger only */
 @media only screen and (min-width: 768px) {
-  .sendmoney {
-    max-width: 170px;
+  .module {
+    max-width: 21.25%;
   }
-  .sendmoney p {
+  .module p {
     display: none;
   }
-  .sendmoney:hover p {
+  .module:hover p {
     text-align: center;
     font-size: 10px;
     display: block
-  }
-  .receive p {
-    display: none;
-  }
-  .receive:hover p {
-    text-align: center;
-    font-size: 10px;
-    display: block;
-  }
-  .repeat p {
-    display: none;
-  }
-  .repeat:hover p {
-    text-align: center;
-    font-size: 10px;
-    display: block;
   }
 }
 
@@ -178,6 +162,7 @@ h1 {
 /* Instructions */
 /* SEND MONEY */
 .module {
+  width: 21.25%;
   float: left;
   background: #f2f2f2;
   display: block;
@@ -189,15 +174,10 @@ h1 {
   margin-top: 25px;
   display: block;
 }
-
-/* RECEIVE */
-.receive {
-  width: 170px;
-  background: #f2f2f2;
-  display: block;
-  float: left;
-  margin: 30px 45px 0px 45px;
+.module p {
+  font-size: 10px;
 }
+/* RECEIVE */
 .fa.fa-tint.fa-4x {
   text-align: center;
   color: gray;
@@ -205,13 +185,6 @@ h1 {
   margin-top: 25px;
 }
 /* REPEAT */
-.repeat {
-  float: left;
-  width: 170px;
-  background: #f2f2f2;
-  display: block;
-  margin: 30px 45px 0px 45px;
-}
 .fa.fa-heart.fa-4x {
   text-align: center;
   color: gray;
