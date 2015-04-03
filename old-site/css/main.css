@@ -20,14 +20,16 @@ html, body {
     width: 100%;
     margin: 20px 0 0 0;
     float: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
   }
   .sendmoney p {
     text-align: center;
     font-size: 14px;
     display: block;
     position: relative;
-    left: -100px;
-    padding-right: 8%;
+    padding-right: 10%;
   }
   .receive p {
     text-align: center;
@@ -165,22 +167,21 @@ h1 {
 .clear {
   clear: both;
 }
-/* Instructions */
-/* SEND MONEY */
-.sendmoney {
-  float: left;
-  background: #f2f2f2;
-  display: block;
-  margin: 30px 45px 0px 50px;
-}
-.sendmoneycircle {
+.circle {
   border: 1px solid #a1a1a1;
   padding: 10px; 
   background: #dddddd;
   height: 150px;
   width: 150px;
   border-radius: 100%;
-  position: center;
+}
+/* Instructions */
+/* SEND MONEY */
+.module {
+  float: left;
+  background: #f2f2f2;
+  display: block;
+  margin: 30px 45px 0px 50px;
 }
 .fa.fa-money.fa-4x {
   text-align: center;
@@ -197,15 +198,6 @@ h1 {
   float: left;
   margin: 30px 45px 0px 45px;
 }
-.receivecircle {
-  border: 1px solid #a1a1a1;
-  padding: 10px; 
-  background: #dddddd;
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
-  display: block;
-}
 .fa.fa-tint.fa-4x {
   text-align: center;
   color: gray;
@@ -219,15 +211,6 @@ h1 {
   background: #f2f2f2;
   display: block;
   margin: 30px 45px 0px 45px;
-}
-.repeatcircle {
-  border: 1px solid #a1a1a1;
-  padding: 10px;
-  background: #dddddd;
-  height: 150px;
-  width: 150px;
-  border-radius: 100%;
-  display: block;
 }
 .fa.fa-heart.fa-4x {
   text-align: center;
