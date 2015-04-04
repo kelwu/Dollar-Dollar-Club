@@ -8,33 +8,44 @@ html, body {
 /* ------------------------For Mobile----------------------------- */
 @media (max-width: 767px) {
   .calltoaction {
-    display: block;
+    background-color: blue;
+    padding-left: 32%;
+    padding-right: 0;
   }
   body, html {
     padding: 0;
   }
-  .module {
+  .sendmoney {
     height: 100%;
     width: 100%;
+    margin: 20px 0 0 0;
     float: none;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
   }
-  .module p {
+  .sendmoney p {
     text-align: center;
     font-size: 14px;
     display: block;
     position: relative;
     padding-right: 10%;
   }
-  .circle {
-    border: 1px solid #a1a1a1;
-    padding: 10px; 
-    background: #dddddd;
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
+  .receive p {
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    position: relative;
+    left: -100px;
+    padding-right: 8%;
+  }
+   .repeat p {
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    position: relative;
+    left: -100px;
+    padding-right: 8%;
   }
 }
 
@@ -42,10 +53,6 @@ html, body {
 @media only screen and (min-width: 768px) {
   .module {
     max-width: 21.25%;
-    float: left;
-    margin-left: 6%;
-    margin-right: 6%;
-    margin-top: 4.8%;
   }
   .module p {
     display: none;
@@ -54,14 +61,6 @@ html, body {
     text-align: center;
     font-size: 10px;
     display: block
-  }
-  .circle {
-    border: 1px solid #a1a1a1;
-    padding: 10px; 
-    background: #dddddd;
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
   }
 }
 
@@ -76,7 +75,7 @@ section {
   margin: 0 auto;
   width: 100%;
 }
-/* ----------------------------------------------------------------- */
+
 h2 {
   text-align: center;
   color: black;
@@ -162,15 +161,13 @@ h1 {
 }
 /* Instructions */
 /* SEND MONEY */
-/*.module {
+.module {
   width: 21.25%;
+  float: left;
   background: #f2f2f2;
   display: block;
-  margin-left: 6%;
-  margin-right: 6%;
-  margin-top: 4.8%;
-  text-align: center;
-}*/
+  margin: 30px 45px 0px 50px;
+}
 .fa.fa-money.fa-4x {
   text-align: center;
   color: gray;
@@ -178,7 +175,7 @@ h1 {
   display: block;
 }
 .module p {
-  font-size: 14px;
+  font-size: 10px;
 }
 /* RECEIVE */
 .fa.fa-tint.fa-4x {
