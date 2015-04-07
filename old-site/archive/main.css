@@ -1,91 +1,74 @@
 html, body {
-  background: rgb(61, 61, 61);
+  background: gray;
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding-right: 5%;
   padding-left: 5%;
-  height: 100%;
 }
+/* ------------------------For Mobile----------------------------- */
+@media (max-width: 767px) {
+  .calltoaction {
+    background-color: blue;
+    padding-left: 32%;
+    padding-right: 0;
+  }
+  body, html {
+    padding: 0;
+  }
+  .sendmoney {
+    height: 100%;
+    width: 100%;
+    margin: 20px 0 0 0;
+    float: none;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .sendmoney p {
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    position: relative;
+    padding-right: 10%;
+  }
+  .receive p {
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    position: relative;
+    left: -100px;
+    padding-right: 8%;
+  }
+   .repeat p {
+    text-align: center;
+    font-size: 14px;
+    display: block;
+    position: relative;
+    left: -100px;
+    padding-right: 8%;
+  }
+}
+
+/* ----------------Desktop - Display Hover on 800px and larger only */
+@media only screen and (min-width: 768px) {
+  .module {
+    max-width: 21.25%;
+  }
+  .module p {
+    display: none;
+  }
+  .module:hover p {
+    text-align: center;
+    font-size: 10px;
+    display: block
+  }
+}
+
 .body-wrap {
   background: #F2F2F2;
   margin: 0 auto;
   width: 100%;
   max-width: 800px;
-  height: 100%;
-}
-/* ------------------------For Mobile----------------------------- */
-@media (max-width: 767px) {
-  .calltoaction {
-    display: block;
-    height: 100%;
-  }
-  body, html {
-    padding: 0;
-  }
-  .module {
-    height: 32%;
-    width: 100%;
-    float: none;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 1.9%;
-    display: inline-block;
-  }
-  .module p {
-    text-align: center;
-    font-size: 14px;
-    display: block;
-    position: relative;
-    padding-left: 13%;
-    padding-right: 13%;
-  }
-  .circle {
-    border: 1px solid #a1a1a1;
-    padding-top: 10px; 
-    background: #dddddd;
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  footer {
-  margin-top: 0px;
-  }
-}
-
-/* ----------------Desktop - Display Hover on 768px and larger only */
-@media only screen and (min-width: 768px) {
-  .calltoaction {
-    height: 38.7%;
-  }
-  .module {
-    max-width: 21.25%;
-    float: left;
-    margin-left: 6%;
-    margin-right: 6%;
-    margin-top: 3.8%;
-    margin-bottom: -20px;
-  }
-  .module p {
-    display: none;
-    font-size: 12px;
-    margin-bottom: 0px;
-  }
-  .module:hover p {
-    text-align: center;
-    font-size: 12px;
-    display: block
-  }
-  .circle {
-    border: 1px solid #a1a1a1;
-    padding: 10px; 
-    background: #dddddd;
-    height: 150px;
-    width: 150px;
-    border-radius: 100%;
-  }
 }
 
 section {
@@ -107,7 +90,7 @@ h2 {
   background-image: url("bg.jpg");
   background-position: top;
   position: relative;
-  height: 50%;
+  height: 375px;
   max-width: 800px;
   } 
 .orange-overlay {
@@ -136,12 +119,12 @@ div.center {
   transform: translateY(-50%);
 }
 .firstbillion p {
-  font-size: 14px;
+  font-size: 12px;
 }
 .firstbillion img {
   width: 35px;
   position: relative;
-  top: 124px;
+  top: 120px;
 }
 h1 {
   margin: auto;
@@ -157,11 +140,14 @@ h1 {
   font-size: 12px;
 }
 
-/*--------------INSTRUCTIONS----------------*/
 .calltoaction {
   background-color: #F2F2F2;
+  height: 300px;
   max-width: 800px;
 }
+/*.instructions {
+  height: 347px;
+}*/
 .clear {
   clear: both;
 }
@@ -173,6 +159,15 @@ h1 {
   width: 150px;
   border-radius: 100%;
 }
+/* Instructions */
+/* SEND MONEY */
+.module {
+  width: 21.25%;
+  float: left;
+  background: #f2f2f2;
+  display: block;
+  margin: 30px 45px 0px 50px;
+}
 .fa.fa-money.fa-4x {
   text-align: center;
   color: gray;
@@ -180,7 +175,7 @@ h1 {
   display: block;
 }
 .module p {
-  font-size: 14px;
+  font-size: 10px;
 }
 /* RECEIVE */
 .fa.fa-tint.fa-4x {
@@ -204,6 +199,7 @@ h3 {
 /* Footer */
 
 footer {
+  margin: 0;
   width: 100%;
   color: black;
   z-index: 1;
