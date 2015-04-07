@@ -1,9 +1,16 @@
 html, body {
-  background: gray;
+  background: rgb(61, 61, 61);
   font-family: 'Montserrat', sans-serif;
   margin: 0;
   padding-right: 5%;
   padding-left: 5%;
+  height: 100%;
+}
+.body-wrap {
+  background: #F2F2F2;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
   height: 100%;
 }
 /* ------------------------For Mobile----------------------------- */
@@ -48,17 +55,17 @@ html, body {
   }
 }
 
-/* ----------------Desktop - Display Hover on 800px and larger only */
+/* ----------------Desktop - Display Hover on 768px and larger only */
 @media only screen and (min-width: 768px) {
   .calltoaction {
-    height: 37.5%;
+    height: 38.7%;
   }
   .module {
     max-width: 21.25%;
     float: left;
     margin-left: 6%;
     margin-right: 6%;
-    margin-top: 2.8%;
+    margin-top: 3.8%;
     margin-bottom: -20px;
   }
   .module p {
@@ -81,19 +88,11 @@ html, body {
   }
 }
 
-.body-wrap {
-  background: #F2F2F2;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 800px;
-  height: 100%;
-}
-
 section {
   margin: 0 auto;
   width: 100%;
 }
-/* ----------------------------------------------------------------- */
+
 h2 {
   text-align: center;
   color: black;
@@ -157,6 +156,8 @@ h1 {
   margin: 0;
   font-size: 12px;
 }
+
+/*--------------INSTRUCTIONS----------------*/
 .calltoaction {
   background-color: #F2F2F2;
   max-width: 800px;
@@ -172,8 +173,6 @@ h1 {
   width: 150px;
   border-radius: 100%;
 }
-/* Instructions */
-
 .fa.fa-money.fa-4x {
   text-align: center;
   color: gray;
@@ -212,7 +211,6 @@ footer {
   float: left;
   background-color: black;
   max-width: 800px;
-  margin-top: 1.4%;
 }
 
 footer p {
