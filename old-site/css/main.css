@@ -10,7 +10,6 @@ html, body {
   background: #F2F2F2;
   margin: 0 auto;
   width: 100%;
-  max-width: 800px;
   height: 100%;
 }
 /* ------------------------For Mobile----------------------------- */
@@ -108,7 +107,10 @@ h2 {
   background-position: top;
   position: relative;
   height: 50%;
-  max-width: 800px;
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   } 
 .orange-overlay {
   background:#FF2400; 
@@ -148,8 +150,10 @@ h1 {
 }
 /* ABOUT */
 .about {
-  margin: 20px 0 0 0;
-  max-width: 800px;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
 }
 .about p {
   text-align: center;
@@ -160,7 +164,9 @@ h1 {
 /*--------------INSTRUCTIONS----------------*/
 .calltoaction {
   background-color: #F2F2F2;
-  max-width: 800px;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .clear {
   clear: both;
@@ -205,12 +211,8 @@ h3 {
 
 footer {
   width: 100%;
-  color: black;
-  z-index: 1;
   display: block;
-  float: left;
   background-color: black;
-  max-width: 800px;
 }
 
 footer p {
