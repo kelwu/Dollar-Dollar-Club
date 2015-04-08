@@ -9,7 +9,7 @@ html, body {
 .body-wrap {
   background: #F2F2F2;
   margin: 0 auto;
-  width: 100%;
+  width: 80%;
   height: 100%;
 }
 /* ------------------------For Mobile----------------------------- */
@@ -186,7 +186,7 @@ h1 {
   display: block;
 }
 .module p {
-  font-size: 14px;
+  font-size: 12px;
 }
 /* RECEIVE */
 .fa.fa-tint.fa-4x {
